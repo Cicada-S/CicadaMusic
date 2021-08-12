@@ -23,20 +23,20 @@
 
 import config from './config'
 
-export default (url, data={}, method='GET') => {
+export default (url, data = {}, method = 'GET') => {
   // new Promise 初始化 promise 实例的状态为pending
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     wx.request({
       url: config.host + url, // 真机调试 moblieHost
       data,
       method,
       header: {
-        cookie: wx.getStorageSync('cookies')?wx.getStorageSync('cookies').find(item => item.indexOf('MUSIC_U') !== -1):''
+        cookie: wx.getStorageSync('cookies') ? wx.getStorageSync('cookies').find(item => item.indexOf('MUSIC_U') !== -1) : ''
       },
       success: (res) => {
-        if(data.isLogin){ // 登录请求
+        if (data.isLogin) { // 登录请求
           // 将用户的cookies存储到本地
-        console.log(res.cookies);
+          console.log(res.cookies);
 
           wx.setStorage({
             key: 'cookies',
@@ -50,5 +50,4 @@ export default (url, data={}, method='GET') => {
       }
     })
   })
-  
 }

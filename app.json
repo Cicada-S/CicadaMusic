@@ -5,7 +5,9 @@
     "pages/personal/personal",
     "pages/login/login",
     "pages/recommendSong/recommendSong",
-    "pages/songDetail/songDetail"
+    "pages/songDetail/songDetail",
+    "pages/search/search",
+    "pages/other/other"
   ],
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
@@ -22,12 +24,14 @@
         "text": "发现",
         "iconPath": "/static/images/tabs/tab-home.png",
         "selectedIconPath": "/static/images/tabs/tab-home-current.png"
-      },{
+      },
+      {
         "pagePath": "pages/video/video",
         "text": "云村",
         "iconPath": "/static/images/tabs/select.png",
         "selectedIconPath": "/static/images/tabs/selected.png"
-      },{
+      },
+      {
         "pagePath": "pages/personal/personal",
         "text": "我的",
         "iconPath": "/static/images/tabs/tab-my.png",
@@ -35,7 +39,9 @@
       }
     ]
   },
-  "requiredBackgroundModes":["audio"],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

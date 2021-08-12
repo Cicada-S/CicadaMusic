@@ -41,6 +41,18 @@
           "pathName": "pages/songDetail/songDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/other/other",
+          "pathName": "pages/other/other",
+          "query": "",
+          "scene": null
         }
       ]
     }
